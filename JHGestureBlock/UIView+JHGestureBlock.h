@@ -29,7 +29,7 @@
 
 #import <UIKit/UIKit.h>
 
-typedef void(^JHGestureBlock)(UIView *view, UIGestureRecognizer *gesture);
+typedef void(^JHGestureBlock)(__kindof UIView *view, UIGestureRecognizer *gesture);
 
 typedef NS_ENUM(NSUInteger, JHGestureType) {
     JHGestureType_Tap,          // 点击
