@@ -42,7 +42,7 @@ typedef NS_ENUM(NSUInteger, JHGestureType) {
 
 @interface UIView (JHGestureBlock)
 
-- (UIGestureRecognizer *)addGestureRecognizer:(JHGestureType)type block:(JHGestureBlock)block;
+- (__kindof UIGestureRecognizer *)addGestureRecognizer:(JHGestureType)type block:(JHGestureBlock)block;
 
 @end
 
