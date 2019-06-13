@@ -34,7 +34,7 @@ static const char *JHGestureBlockKey;
 
 @implementation UIView (JHGestureBlock)
 
-- (UIGestureRecognizer *)addGestureRecognizer:(JHGestureType)type block:(JHGestureBlock)block
+- (__kindof UIGestureRecognizer *)addGestureRecognizer:(JHGestureType)type block:(JHGestureBlock)block
 {
     if (block) {
         NSDictionary *dic = @{@"0":@"UITapGestureRecognizer",
